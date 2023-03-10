@@ -4,7 +4,7 @@ This is a web page designed to tell a story using black and white stock photogra
 
 ## Preview
 
-![Preview of the minimalist blog design](https://github.com/acorvin/landing-page-minilife/blob/main/preview-photo-portfolio.jpg?raw=true)
+![Preview of the minimalist blog design](https://github.com/acorvin/landing-page-minilife/blob/main/preview-photo-portfolio.png?raw=true)
 
 You can also see a live demo of the project [here](https://acorvin.github.io/landing-page-minilife/).
 
