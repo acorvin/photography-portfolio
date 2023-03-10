@@ -1,0 +1,187 @@
+body {
+  font-family: 'Poppins', sans-serif;
+}
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 64px 0;
+}
+.navbar .left {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.navbar .right {
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar .right a {
+  text-decoration: none;
+  color: #000;
+}
+.navbar .right a:hover {
+  text-decoration: underline;
+}
+.navbar .right img {
+  width: 24px;
+  height: 24px;
+}
+.navbar .hamburger {
+  height: 50px;
+  width: 50px;
+}
+.navbar .bar {
+  background-color: #000;
+  height: 4px;
+  width: 36px;
+  margin: 3px;
+  border-radius: 10px;
+}
+.navbar .hamburger {
+  display: none;
+}
+.project-grid {
+  display: grid;
+  grid-template-areas:
+    'story story pen'
+    'story story feather'
+    'trees air feather'
+    'window window flowers'
+    'crows crows plane'
+    'stairs stairs plane'
+    'hands hands hands';
+  grid-gap: 16px;
+  margin: 0 auto;
+}
+#story {
+  grid-area: story;
+}
+#pen {
+  grid-area: pen;
+}
+#plane {
+  grid-area: plane;
+}
+#trees {
+  grid-area: trees;
+}
+#air {
+  grid-area: air;
+}
+#feather {
+  grid-area: feather;
+}
+#stairs {
+  grid-area: stairs;
+}
+#flowers {
+  grid-area: flowers;
+}
+#window {
+  grid-area: window;
+}
+#hands {
+  grid-area: hands;
+}
+#crows {
+  grid-area: crows;
+}
+.project {
+  position: relative;
+}
+.project img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+.project .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  font-size: 2.4rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  opacity: 0;
+  transition: all 0.2s ease;
+}
+.project .overlay:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.overlay.white {
+  color: white;
+}
+.footer {
+  text-align: center;
+  padding: 64px;
+}
+@media only screen and (max-width: 1100px) {
+  .container {
+    max-width: 100%;
+  }
+  .project-grid {
+    grid-template-areas:
+      'story story'
+      'pen feather'
+      'trees air'
+      'window flowers'
+      'crows crows'
+      'stairs plane'
+      'hands hands';
+    grid-gap: 16px;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .navbar {
+    padding: 16px 24px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    background-color: #fff;
+    width: 100%;
+  }
+  .navbar .right {
+    display: none;
+  }
+  .navbar .hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .project-grid {
+    grid-template-areas:
+      'story story'
+      'pen feather'
+      'trees air'
+      'window window'
+      'flowers flowers'
+      'crows crows'
+      'stairs plane'
+      'hands hands';
+    grid-gap: 16px;
+    margin: 0 auto;
+    margin-top: 100px;
+  }
+  .project .overlay {
+    font-size: 1.5rem;
+  }
+  .footer {
+    padding: 32px 0;
+    font-size: 0.875rem;
+  }
+}
